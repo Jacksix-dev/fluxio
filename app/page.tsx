@@ -49,7 +49,7 @@ export default function Home() {
         <div className="container mx-auto max-w-5xl text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 border border-[#00B4D8]/20 rounded-full mb-8 backdrop-blur-sm">
             <span className="w-2 h-2 bg-[#00B4D8] rounded-full animate-pulse" />
-            <span className="text-sm text-[#CAF0F8]">Ahora en beta pública</span>
+            <span className="text-sm text-[#CAF0F8]">Ahora con nuevas automatizaciones</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-medium tracking-tight text-[#CAF0F8] mb-6 leading-tight">
@@ -64,10 +64,16 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="px-8 py-4 bg-[#00B4D8] text-[#03045E] font-medium rounded-full hover:bg-[#48CAE4] transition-all duration-200 shadow-xl shadow-[#00B4D8]/30 flex items-center gap-2 group">
+          
+            <a
+                href={`https://wa.me/5491140708677?text=${encodeURIComponent("Hola! Quiero cotizar")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-[#00B4D8] text-[#03045E] font-medium rounded-full hover:bg-[#48CAE4] transition-all duration-200 shadow-xl shadow-[#00B4D8]/30 flex items-center gap-2 group"
+              >
               Cotizar
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
             
           </div>
         </div>
@@ -101,7 +107,7 @@ export default function Home() {
               Productos
             </h2>
             <p className="text-lg text-[#ADE8F4]">
-              Cuatro formas en las que Fluxio lleva automatización a tu stack.
+              Cuatro formas en las que Fluxio lleva automatización a tu negocio.
             </p>
           </div>
 
@@ -341,24 +347,24 @@ export default function Home() {
               <div className="flex items-center justify-center gap-2 mb-3">
                 <Zap className="w-6 h-6 text-[#00B4D8]" />
               </div>
-              <div className="text-4xl font-medium text-[#CAF0F8] mb-2">10M+</div>
-              <div className="text-[#90E0EF]">Automatizaciones ejecutadas</div>
+              <div className="text-4xl font-medium text-[#CAF0F8] mb-2">100+</div>
+              <div className="text-[#90E0EF]">Flujos disponibles</div>
             </div>
 
             <div>
               <div className="flex items-center justify-center gap-2 mb-3">
                 <Users className="w-6 h-6 text-[#00B4D8]" />
               </div>
-              <div className="text-4xl font-medium text-[#CAF0F8] mb-2">50K+</div>
-              <div className="text-[#90E0EF]">Usuarios activos</div>
+              <div className="text-4xl font-medium text-[#CAF0F8] mb-2">24/7</div>
+              <div className="text-[#90E0EF]">Soporte</div>
             </div>
 
             <div>
               <div className="flex items-center justify-center gap-2 mb-3">
                 <Shield className="w-6 h-6 text-[#00B4D8]" />
               </div>
-              <div className="text-4xl font-medium text-[#CAF0F8] mb-2">99.9%</div>
-              <div className="text-[#90E0EF]">SLA de disponibilidad</div>
+              <div className="text-4xl font-medium text-[#CAF0F8] mb-2">100%</div>
+              <div className="text-[#90E0EF]">Seguridad Garantizada</div>
             </div>
           </div>
         </div>
@@ -379,10 +385,16 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <button className="px-8 py-4 bg-[#00B4D8] text-[#03045E] font-medium rounded-full hover:bg-[#48CAE4] transition-all duration-200 shadow-xl shadow-[#00B4D8]/30 flex items-center gap-2 group">
-                  Empezá a construir ahora
+                <a
+                  href={`https://wa.me/5491140708677?text=${encodeURIComponent("Hola! Quiero cotizar")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 bg-[#00B4D8] text-[#03045E] font-medium rounded-full hover:bg-[#48CAE4] transition-all duration-200 shadow-xl shadow-[#00B4D8]/30 flex items-center gap-2 group"
+                >
+                  Empeza a construir
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
+              
                 
               </div>
             </div>
