@@ -12,6 +12,8 @@ import {
   Users,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
+
 
 export default function Home() {
   return (
@@ -23,11 +25,17 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 h-16 backdrop-blur-xl border-b border-[#023E8A]/50">
         <div className="container mx-auto px-6 h-full flex items-center justify-between">
           <div className="flex items-center gap-12">
-            <Link
-              href="/"
-              className="text-xl font-medium text-[#CAF0F8] hover:opacity-80 transition-opacity"
-            >
-              Fluxio
+          <Link href="/" className="flex items-center gap-3">
+            {/* logo grande */}
+            <Image
+              src="/logo.png"
+              alt="Fluxio"
+              width={50}
+              height={50}
+              priority
+              className="drop-shadow-[0_0_10px_rgba(72,202,228,0.25)]"
+            />
+            <span className="text-xl font-medium text-[#CAF0F8] leading-none">Fluxio</span>
             </Link>
 
             <div className="hidden md:flex items-center gap-8">
@@ -37,9 +45,16 @@ export default function Home() {
 
           <div className="flex items-center gap-4">
             
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScgGLv9kZjK0mxECxRg5uUz9XZWkiBHlwE9Nae5XLCPpFgxjg/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
             <button className="px-5 py-2 bg-[#00B4D8] text-[#03045E] text-sm font-medium rounded-full hover:bg-[#48CAE4] transition-all duration-200 shadow-lg shadow-[#00B4D8]/20">
               Quiero que me contacten
             </button>
+          </a>
           </div>
         </div>
       </nav>
