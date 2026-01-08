@@ -92,19 +92,14 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-8">
             <Link
               href="#productos"
-              className="text-sm text-[#ADE8F4] hover:text-[#CAF0F8] transition-colors duration-200"
+              className="text-lg text-[#ADE8F4] hover:text-[#CAF0F8] transition-colors duration-200"
             >
               Productos
             </Link>
-            <Link
-              href="#integraciones"
-              className="text-sm text-[#ADE8F4] hover:text-[#CAF0F8] transition-colors duration-200"
-            >
-              Integraciones
-            </Link>
+            
             <Link
               href="#nosotros"
-              className="text-sm text-[#ADE8F4] hover:text-[#CAF0F8] transition-colors duration-200"
+              className="text-lg text-[#ADE8F4] hover:text-[#CAF0F8] transition-colors duration-200"
             >
               Nosotros
             </Link>
@@ -142,13 +137,7 @@ export default function Home() {
               >
                 Productos
               </Link>
-              <Link
-                href="#integraciones"
-                className="text-sm text-[#ADE8F4] hover:text-[#CAF0F8] transition-colors duration-200 py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Integraciones
-              </Link>
+              
               <Link
                 href="#nosotros"
                 className="text-sm text-[#ADE8F4] hover:text-[#CAF0F8] transition-colors duration-200 py-2"
